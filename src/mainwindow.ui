@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>538</width>
+    <height>456</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MSIKLM-GUI</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="iconsAndStuff.qrc">
+    <normaloff>:/icons/Apps-nepomuk-icon.png</normaloff>:/icons/Apps-nepomuk-icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="0">
+     <widget class="QPushButton" name="buttonPink">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>All Pink</string>
+      </property>
+      <property name="icon">
+       <iconset resource="iconsAndStuff.qrc">
+        <normaloff>:/icons/Places-folder-violet-icon.png</normaloff>:/icons/Places-folder-violet-icon.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3" rowspan="8">
+     <widget class="QGroupBox" name="groupBoxRight">
+      <property name="title">
+       <string>Right Pattern</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <widget class="QRadioButton" name="rightGreenBox">
+         <property name="text">
+          <string>Green</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QRadioButton" name="rightRedBox">
+         <property name="text">
+          <string>Red</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QRadioButton" name="rightPinkBox">
+         <property name="text">
+          <string>Pink</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QRadioButton" name="rightBlueBox">
+         <property name="text">
+          <string>Blue</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QRadioButton" name="rightYellowBox">
+         <property name="text">
+          <string>Yellow</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QRadioButton" name="rightSkyBox">
+         <property name="text">
+          <string>Sky</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QRadioButton" name="rightOrangeBox">
+         <property name="text">
+          <string>Orange</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QRadioButton" name="rightWhiteBox">
+         <property name="text">
+          <string>White</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="buttonGreen">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>All Green</string>
+      </property>
+      <property name="icon">
+       <iconset resource="iconsAndStuff.qrc">
+        <normaloff>:/icons/Places-folder-green-icon.png</normaloff>:/icons/Places-folder-green-icon.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QPushButton" name="buttonSky">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>All Sky</string>
+      </property>
+      <property name="icon">
+       <iconset resource="iconsAndStuff.qrc">
+        <normaloff>:/icons/Places-folder-cyan-icon.png</normaloff>:/icons/Places-folder-cyan-icon.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2" rowspan="8">
+     <widget class="QGroupBox" name="groupBoxMiddle">
+      <property name="title">
+       <string>Middle Pattern</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QRadioButton" name="middleGreenBox">
+         <property name="text">
+          <string>Green</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QRadioButton" name="middleRedBox">
+         <property name="text">
+          <string>Red</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QRadioButton" name="middlePinkBox">
+         <property name="text">
+          <string>Pink</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QRadioButton" name="middleBlueBox">
+         <property name="text">
+          <string>Blue</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QRadioButton" name="middleYellowBox">
+         <property name="text">
+          <string>Yellow</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QRadioButton" name="middleSkyBox">
+         <property name="text">
+          <string>Sky</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QRadioButton" name="middleOrangeBox">
+         <property name="text">
+          <string>Orange</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QRadioButton" name="middleWhiteBox">
+         <property name="text">
+          <string>White</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QPushButton" name="buttonWhite">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>All White</string>
+      </property>
+      <property name="icon">
+       <iconset resource="iconsAndStuff.qrc">
+        <normaloff>:/icons/Places-folder-grey-icon.png</normaloff>:/icons/Places-folder-grey-icon.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="buttonBlue">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>All Blue</string>
+      </property>
+      <property name="icon">
+       <iconset resource="iconsAndStuff.qrc">
+        <normaloff>:/icons/Places-folder-blue-icon.png</normaloff>:/icons/Places-folder-blue-icon.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" rowspan="8">
+     <widget class="QGroupBox" name="groupBoxleft">
+      <property name="title">
+       <string>Left Pattern</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QRadioButton" name="leftGreenBox">
+         <property name="text">
+          <string>Green</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QRadioButton" name="leftRedBox">
+         <property name="text">
+          <string>Red</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QRadioButton" name="leftPinkBox">
+         <property name="text">
+          <string>Pink</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QRadioButton" name="leftBlueBox">
+         <property name="text">
+          <string>Blue</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QRadioButton" name="leftYellowBox">
+         <property name="text">
+          <string>Yellow</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QRadioButton" name="leftSkyBox">
+         <property name="text">
+          <string>Sky</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QRadioButton" name="leftOrangeBox">
+         <property name="text">
+          <string>Orange</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QRadioButton" name="leftWhiteBox">
+         <property name="text">
+          <string>White</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="buttonRed">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>All Red</string>
+      </property>
+      <property name="icon">
+       <iconset resource="iconsAndStuff.qrc">
+        <normaloff>:/icons/Places-folder-red-icon.png</normaloff>:/icons/Places-folder-red-icon.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QPushButton" name="buttonYellow">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>All Yellow</string>
+      </property>
+      <property name="icon">
+       <iconset resource="iconsAndStuff.qrc">
+        <normaloff>:/icons/Places-folder-yellow-icon.png</normaloff>:/icons/Places-folder-yellow-icon.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QPushButton" name="buttonOrange">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>All Orange</string>
+      </property>
+      <property name="icon">
+       <iconset resource="iconsAndStuff.qrc">
+        <normaloff>:/icons/Places-folder-orange-icon.png</normaloff>:/icons/Places-folder-orange-icon.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QDial" name="dial">
+      <property name="statusTip">
+       <string notr="true"/>
+      </property>
+      <property name="minimum">
+       <number>0</number>
+      </property>
+      <property name="maximum">
+       <number>3</number>
+      </property>
+      <property name="pageStep">
+       <number>1</number>
+      </property>
+      <property name="value">
+       <number>3</number>
+      </property>
+      <property name="sliderPosition">
+       <number>3</number>
+      </property>
+      <property name="invertedAppearance">
+       <bool>false</bool>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="notchesVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QPushButton" name="buttonTest">
+      <property name="text">
+       <string>Test</string>
+      </property>
+      <property name="icon">
+       <iconset resource="iconsAndStuff.qrc">
+        <normaloff>:/icons/Places-bookmarks-icon.png</normaloff>:/icons/Places-bookmarks-icon.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1" rowspan="2" colspan="3">
+     <widget class="QGroupBox" name="effectModeBox">
+      <property name="title">
+       <string>Effect Modes:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="3">
+        <widget class="QRadioButton" name="modeBreathe">
+         <property name="text">
+          <string>Breathe</string>
+         </property>
+         <property name="icon">
+          <iconset resource="iconsAndStuff.qrc">
+           <normaloff>:/icons/Actions-view-preview-icon.png</normaloff>:/icons/Actions-view-preview-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" rowspan="2">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="5">
+        <widget class="QRadioButton" name="modeWave">
+         <property name="text">
+          <string>Wave</string>
+         </property>
+         <property name="icon">
+          <iconset resource="iconsAndStuff.qrc">
+           <normaloff>:/icons/Actions-fill-color-icon.png</normaloff>:/icons/Actions-fill-color-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QRadioButton" name="modeGaming">
+         <property name="text">
+          <string>Gaming</string>
+         </property>
+         <property name="icon">
+          <iconset resource="iconsAndStuff.qrc">
+           <normaloff>:/icons/Actions-games-config-theme-icon.png</normaloff>:/icons/Actions-games-config-theme-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QRadioButton" name="modeNormal">
+         <property name="text">
+          <string>Normal</string>
+         </property>
+         <property name="icon">
+          <iconset resource="iconsAndStuff.qrc">
+           <normaloff>:/icons/Apps-nepomuk-icon.png</normaloff>:/icons/Apps-nepomuk-icon.png</iconset>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QRadioButton" name="modeDemo">
+         <property name="text">
+          <string>Demo</string>
+         </property>
+         <property name="icon">
+          <iconset resource="iconsAndStuff.qrc">
+           <normaloff>:/icons/Apps-preferences-desktop-icons-icon.png</normaloff>:/icons/Apps-preferences-desktop-icons-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>538</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="iconsAndStuff.qrc"/>
+ </resources>
+ <connections/>
+</ui>

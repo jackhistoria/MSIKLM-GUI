@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=System Utilities;
+Comment[en_US]=Keyboard Colors
+Comment=Keyboard Colors
+Exec=kdesu -u root /home/jack/Workbench/build-msiklm_own_gui-Desktop-Debug/msiklm_own_gui
+Name[en_US]=msiklm_own_gui
+Name=msiklm_own_gui
+Icon=/home/jack/Workbench/msiklm_own_gui/Apps-nepomuk-icon.png
+Path=/home/jack/Workbench/build-msiklm_own_gui-Desktop-Debug/
+StartupNotify=true
+Terminal=false
+Type=Application
