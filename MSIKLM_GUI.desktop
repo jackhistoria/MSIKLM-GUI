@@ -1,13 +1,14 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 Categories=System Utilities;
 Comment[en_US]=Keyboard Colors
 Comment=Keyboard Colors
-Exec=kdesu -u root /home/jack/Workbench/MSIKLM_GUI/MSIKLM_GUI
+Exec=kdesu -u root /home/jack/Workbench/MSIKLM-GUI/MSIKLM_GUI
 /MSIKLM_GUI
-Name[en_US]=msiklm_own_gui
-Name=msiklm_own_gui
-Icon=/home/jack/Workbench/MSIKLM_GUI/Apps-nepomuk-icon.png
-Path=/home/jack/Workbench/MSIKLM_GUI
+Name[en_US]=MSIKLM-GUI
+Name=MSIKLM-GUI
+Icon=/home/jack/Workbench/MSIKLM-GUI/Apps-nepomuk-icon.png
+Path=/home/jack/Workbench/MSIKLM-GUI
 StartupNotify=true
 Terminal=false
 Type=Application

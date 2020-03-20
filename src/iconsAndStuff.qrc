@@ -1,12 +1,9 @@
 <RCC>
     <qresource prefix="/icons">
         <file>Apps-nepomuk-icon.png</file>
-        <file>Actions-draw-brush-icon.png</file>
         <file>Actions-fill-color-icon.png</file>
         <file>Actions-games-config-theme-icon.png</file>
-        <file>Actions-insert-image-icon.png</file>
         <file>Actions-view-preview-icon.png</file>
-        <file>Apps-krita-icon.png</file>
         <file>Apps-preferences-desktop-icons-icon.png</file>
         <file>Places-bookmarks-icon.png</file>
         <file>Places-folder-blue-icon.png</file>

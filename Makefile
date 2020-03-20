@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = MSIKLM_GUI1.0.0
-DISTDIR = ./.tmp/MSIKLM_GUI1.0.0
+DISTDIR = /home/jack/Workbench/MSIKLM-GUI/.tmp/MSIKLM_GUI1.0.0
 LINK          = g++
 LFLAGS        = 
 LIBS          = $(SUBLIBS) -lhidapi-libusb /usr/lib/libQt5Widgets.so /usr/lib/libQt5Gui.so /usr/lib/libQt5Core.so -lGL -lpthread -lmd4c   
@@ -270,6 +270,7 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/features/qt_config.prf \
 		/usr/lib/qt/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/qt/mkspecs/features/spec_post.prf \
+		src/.qmake.stash \
 		/usr/lib/qt/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/qt/mkspecs/features/toolchain.prf \
 		/usr/lib/qt/mkspecs/features/default_pre.prf \
@@ -514,6 +515,7 @@ Makefile: src/MSIKLM_GUI.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/lib/q
 		/usr/lib/qt/mkspecs/features/qt_config.prf \
 		/usr/lib/qt/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/qt/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/usr/lib/qt/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/qt/mkspecs/features/toolchain.prf \
 		/usr/lib/qt/mkspecs/features/default_pre.prf \
@@ -746,6 +748,7 @@ Makefile: src/MSIKLM_GUI.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/lib/q
 /usr/lib/qt/mkspecs/features/qt_config.prf:
 /usr/lib/qt/mkspecs/linux-g++/qmake.conf:
 /usr/lib/qt/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /usr/lib/qt/mkspecs/features/exclusive_builds.prf:
 /usr/lib/qt/mkspecs/features/toolchain.prf:
 /usr/lib/qt/mkspecs/features/default_pre.prf:
@@ -827,15 +830,12 @@ qrc_iconsAndStuff.cpp: src/iconsAndStuff.qrc \
 		src/Places-folder-cyan-icon.png \
 		src/Actions-fill-color-icon.png \
 		src/Actions-games-config-theme-icon.png \
-		src/Apps-krita-icon.png \
 		src/Places-folder-red-icon.png \
 		src/Actions-view-preview-icon.png \
 		src/Places-folder-green-icon.png \
-		src/Actions-draw-brush-icon.png \
 		src/Places-folder-blue-icon.png \
 		src/Places-folder-orange-icon.png \
 		src/Places-folder-violet-icon.png \
-		src/Actions-insert-image-icon.png \
 		src/Places-bookmarks-icon.png
 	/usr/bin/rcc -name iconsAndStuff src/iconsAndStuff.qrc -o qrc_iconsAndStuff.cpp
 
@@ -851,7 +851,7 @@ compiler_moc_header_clean:
 moc_mainwindow.cpp: src/mainwindow.h \
 		moc_predefs.h \
 		/usr/bin/moc
-	/usr/bin/moc $(DEFINES) --include ./MSIKLM_GUI/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I./MSIKLM_GUI/src -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/9.2.1 -I/usr/include/c++/9.2.1/x86_64-pc-linux-gnu -I/usr/include/c++/9.2.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/include-fixed -I/usr/include src/mainwindow.h -o moc_mainwindow.cpp
+	/usr/bin/moc $(DEFINES) --include /home/jack/Workbench/MSIKLM-GUI/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/jack/Workbench/MSIKLM-GUI/src -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/9.2.1 -I/usr/include/c++/9.2.1/x86_64-pc-linux-gnu -I/usr/include/c++/9.2.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/include-fixed -I/usr/include src/mainwindow.h -o moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
